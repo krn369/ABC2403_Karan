@@ -84,8 +84,8 @@ TRAITMENT
     ECRIRE "Veuillez entrer un rayon de la sphère"
     LIRE rayon
 
-    aire <-- 4 * π * rayon * rayon
-    volume <-- ( 4 * π * rayon * rayon * rayon )/3
+    aire <-- 4 * π * rayon²
+    volume <-- ( 4 * π * rayon³ )/3
 
 RESULTAT
 
