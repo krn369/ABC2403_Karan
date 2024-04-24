@@ -60,6 +60,92 @@ TRAITMENT
 
 RESULTAT
 
-    ECRIRE "La moyenne de ", nombre1, " et ", moyenne, "." //"La moyenne de 12 et 81 est 46,5" 
+    ECRIRE "La moyenne de ", nombre1, " et ", nombre2, "est" moyenne, "." //"La moyenne de 12 et 81 est 46,5" 
+
+```
+
+# Exercice 1.4 : Calcul de l'aire et du volume d'une sphère.
+
+Lire le rayon R d’une sphère puis calculer et afficher :
+
+Son aire = 4 π R²
+Son volume = (4 π R³)/3
+
+```
+VARIABLES 
+
+    rayon est un NOMBRE ENTIER
+    aire est un NOMBRE REEL
+    volume est un NOMBRE REEL
+    
+
+TRAITMENT
+
+    ECRIRE "Veuillez entrer un rayon de la sphère"
+    LIRE rayon
+
+    aire <-- 4 * π * rayon * rayon
+    volume <-- ( 4 * π * rayon * rayon * rayon )/3
+
+RESULTAT
+
+    ECRIRE " L’aire de la sphère est ", aire, "et le volume de la sphère est ", volume, "."
+
+```
+
+# Exercice 1.5 : Calcul de la surface d’un secteur circulaire
+Lire le rayon R d’un cercle et un angle A (en degré(s)).
+
+Calculer et afficher :
+
+- L’ aire du secteur circulaire = (π R² A) / 360
+
+
+```
+VARIABLES
+
+    rayon est un NOMBRE ENTIER
+    angle est un NOMBRE ENTIER EN DEGRE
+    secteur  est un NOMBRE REEL
+
+TRAITMENT
+
+    ECRIRE "Veuillez entrer un rayon du cercle"
+    LIRE rayon
+
+    ECRIRE "Veuillez entrer un angle du cercle"
+    LIRE angle
+
+    secteur <-- (π * rayon² A) / 360 
+
+RESULTAT
+
+    ECRIRE "L'arie du secteur circulaire est", secteur, "."
+
+```
+# Exercice 1.6 : Inversion de 2 valeurs
+Lire 2 nombres entier A et B.
+Afficher la valeur de A puis la valeur de B.
+Mettre le contenu de A dans B et celui de B dans A.
+Afficher à nouveau la valeur de A puis la valeur de B.
+
+```
+VARIABLES
+
+    a est un NOMBRE ENTIER
+    b est un NOMBRE ENTIER  
+
+TRAITMENT
+
+    ECRIRE "Veuillez saisir un premier nombre (A)."
+    LIRE a
+
+    ECRIRE "Veuillez saisir un second nombre (B)."
+    LIRE b
+
+RESULTANT
+    ECRIRE "La originale valeur de A est",a, "et de B est",b, "."
+
+    ECRIRE " La valeur inversée de A est", b, "et de B est", a, "."
 
 ```
