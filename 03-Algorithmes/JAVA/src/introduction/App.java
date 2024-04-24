@@ -1,4 +1,4 @@
-package indroduction;
+package introduction;
 
 public class App {
 
@@ -31,6 +31,7 @@ public class App {
 		
 		prenom = "Karan"; // Affection d'une valeur à la variable "prenom"
 		
+		System.out.println(prenom);
 				
 		prenom = "Rojita"; 	// modification de la valeur de la variable "prenom"
 		
