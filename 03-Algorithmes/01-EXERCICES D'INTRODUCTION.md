@@ -134,9 +134,9 @@ VARIABLES
 
     a est un NOMBRE ENTIER
     b est un NOMBRE ENTIER  
-    temp est un NOMBRE ENTIER
+    c est un NOMBRE ENTIER 
 
-TRAITMENT
+TRAITMENT 1
 
     ECRIRE "Veuillez saisir un premier nombre (A)."
     LIRE a
@@ -144,15 +144,16 @@ TRAITMENT
     ECRIRE "Veuillez saisir un second nombre (B)."
     LIRE b
 
-    temp = a
+TRAITMENT 2
+    c = a
     a = b
-    b = temp
+    b = c
 
 
 
 RESULTANT
     ECRIRE "La originale valeur de A est",a, "et de B est",b, "."
 
-    ECRIRE " La valeur inversée de A est",b , "et de B est", temp, "."
+    ECRIRE " La valeur inversée de A est",b , "et de B est", c, "." 
 
 ```
