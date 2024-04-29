@@ -23,6 +23,7 @@ TRAITMENT
 
 RESULTAT
 
-    ECRIRE " L’aire de la sphère est ", aire, "et le volume de la sphère est ", volume, "."
+    ECRIRE " L’aire de la sphère est ", aire, "."
+    ECRIRE " le volume de la sphère est ", volume, "."
 
 ```
