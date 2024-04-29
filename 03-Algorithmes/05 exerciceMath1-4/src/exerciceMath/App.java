@@ -20,7 +20,9 @@ public class App {
         System.out.println("Le volume de la sphère est : " + (4.0 / 3.0) * Math.PI * radius * radius * radius);  
         
     	 
-    		for (int a = 0; a <=100; a = a++ );
+    	for (int a = 0; a <=100; a = a++ );
+    		
+    	sc.close();
     }	
     	 
     	

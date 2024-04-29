@@ -32,7 +32,7 @@ public class App {
         System.out.printf("L'aire du secteur circulaire est: %.2f\n", secteur);
         //%.2f: Il s'agit d'un formatteur qui indique que la valeur de la variable secteur doit être affichée sous forme de nombre flottant avec deux chiffres après la virgule.
         
-
+        sc.close();
 	}
 
 }
