@@ -19,17 +19,20 @@ public class App {
 
         // Déterminer si le nombre est positif ou négatif
         
-        if (nombreEntier >= 0) { // Si nombreEntier est supérieur ou égal à 0
+        if (nombreEntier > 0) { // Si nombreEntier est supérieur  à 0
             System.out.println("Ce nombre est positif");
+        }
             
+       else if (nombreEntier < 0) { // Si nombreEntier est inférieur  à 0
+            System.out.println("Ce nombre est négatif");      
         } 
         
         else {
-            System.out.println("Ce nombre est négatif"); //sinon
+            System.out.println("Ce nombre est ni positif et ni négatif"); //sinon
         }
         
         sc.close();
         
 	}
 
-}
+	}
