@@ -63,8 +63,35 @@ RESULTAT
     ECRIRE "La moyenne de ", nombre1, " et ", nombre2, "est" moyenne, "." //"La moyenne de 12 et 81 est 46,5" 
 
 ```
+# Exercice 1.4 : Calcul de l'aire et du volume d'une sphère.
 
-s
+Lire le rayon R d’une sphère puis calculer et afficher :
+
+Son aire = 4 π R²
+Son volume = (4 π R³)/3
+
+```
+VARIABLES 
+
+    rayon est un NOMBRE ENTIER
+    aire est un NOMBRE REEL
+    volume est un NOMBRE REEL
+    
+
+TRAITMENT
+
+    ECRIRE "Veuillez entrer un rayon de la sphère"
+    LIRE rayon
+
+    aire <-- 4 * π * rayon²
+    volume <-- ( 4 * π * rayon³ )/3
+
+RESULTAT
+
+    ECRIRE " L’aire de la sphère est ", aire, "."
+    ECRIRE " le volume de la sphère est ", volume, "."
+
+```
 
 # Exercice 1.5 : Calcul de la surface d’un secteur circulaire
 Lire le rayon R d’un cercle et un angle A (en degré(s)).
@@ -77,23 +104,23 @@ Calculer et afficher :
 ```
 VARIABLES
 
-    rayon est un NOMBRE ENTIER
+    rayon est un NOMBRE REEL
     angle est un NOMBRE ENTIER EN DEGRE
     secteur  est un NOMBRE REEL
 
 TRAITMENT
 
-    ECRIRE "Veuillez entrer un rayon du cercle"
+    AFFICHER "Veuillez saisir le rayon du cercle : "
     LIRE rayon
 
-    ECRIRE "Veuillez entrer un angle du cercle"
+    AFFICHER "Veuillez saisir l'angle du secteur (en degrés) :"
     LIRE angle
 
     secteur <-- (π * rayon² A) / 360 
 
 RESULTAT
 
-    ECRIRE "L'arie du secteur circulaire est", secteur, "."
+    AFFICHER "L'arie du secteur circulaire est", secteur, "."
 
 ```
 # Exercice 1.6 : Inversion de 2 valeurs

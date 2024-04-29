@@ -6,22 +6,30 @@ public class App {
 
     public static void main(String[] args) {
     	
-    	Scanner sc;
+    	// Déclaration des variables
     	
-    	sc = new Scanner(System.in);
+        double rayon;
+        double aire;
+        double volume;
 
-        System.out.println("Veuillez entrer le rayon de la sphère: ");
-        double radius = sc.nextDouble();
+        // Créer un objet Scanner pour lire les entrées
+        Scanner sc = new Scanner(System.in);
 
-        // Calculer et afficher la surface sur une seule ligne
-        System.out.println("L’aire de la sphère est : " + 4 * Math.PI * radius * radius);
+        // Demander et lire le rayon
+        System.out.print("Veuillez entrer un rayon de la sphère: ");
+        rayon = sc.nextDouble();
 
-        // Calculer et afficher le volume sur une seule ligne
-        System.out.println("Le volume de la sphère est : " + (4.0 / 3.0) * Math.PI * radius * radius * radius);  
+        // Calculer l'aire
+        aire = 4 * Math.PI * rayon * rayon; // Math.PI est la constante pi
+
+        // Calculer le volume
+        volume = (4 * Math.PI * rayon * rayon * rayon) / 3;
+
+        // Afficher les résultats
+        System.out.printf("L'aire de la sphère est: %.2f\n", aire);
+        System.out.printf("Le volume de la sphère est: %.2f\n", volume);
         
-    	 
-    	for (int a = 0; a <=100; a = a++ );
-    		
+    
     	sc.close();
     }	
     	 
