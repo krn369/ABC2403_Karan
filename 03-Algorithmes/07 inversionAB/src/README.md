@@ -9,7 +9,8 @@ Afficher à nouveau la valeur de A puis la valeur de B.
 VARIABLES
 
     a est un NOMBRE ENTIER
-    b est un NOMBRE ENTIER  
+    b est un NOMBRE ENTIER
+    c est un NOMBRE ENTIER  
 
 TRAITMENT 1
 
@@ -25,11 +26,11 @@ RESULTANT 1
 
 TRAITMENT 2 
 
-    c est un NOMBRE ENTIER.
+.
 
-    La valeur de 'a' est stockée dans 'c'
-    La valeur de 'b' est stockée dans 'a'
-    La valeur de 'c' est stockée dans 'b'  // c contenait la valeur de 'a' avant l'inversion 
+ a <-- c   // La valeur de 'a' est stockée dans 'c'
+ b <-- a   // La valeur de 'b' est stockée dans 'a'
+ c <-- b   // La valeur de 'c' est stockée dans 'b'  ( c contenait la valeur de 'a' avant l'inversion )
 
  RESULTANT 2
 
