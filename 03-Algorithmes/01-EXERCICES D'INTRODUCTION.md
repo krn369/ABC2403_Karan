@@ -64,34 +64,7 @@ RESULTAT
 
 ```
 
-# Exercice 1.4 : Calcul de l'aire et du volume d'une sphère.
-
-Lire le rayon R d’une sphère puis calculer et afficher :
-
-Son aire = 4 π R²
-Son volume = (4 π R³)/3
-
-```
-VARIABLES 
-
-    rayon est un NOMBRE ENTIER
-    aire est un NOMBRE REEL
-    volume est un NOMBRE REEL
-    
-
-TRAITMENT
-
-    ECRIRE "Veuillez entrer un rayon de la sphère"
-    LIRE rayon
-
-    aire <-- 4 * π * rayon²
-    volume <-- ( 4 * π * rayon³ )/3
-
-RESULTAT
-
-    ECRIRE " L’aire de la sphère est ", aire, "et le volume de la sphère est ", volume, "."
-
-```
+s
 
 # Exercice 1.5 : Calcul de la surface d’un secteur circulaire
 Lire le rayon R d’un cercle et un angle A (en degré(s)).
@@ -134,26 +107,30 @@ VARIABLES
 
     a est un NOMBRE ENTIER
     b est un NOMBRE ENTIER  
-    c est un NOMBRE ENTIER 
 
 TRAITMENT 1
 
-    ECRIRE "Veuillez saisir un premier nombre (A)."
+   AFFICHER "Veuillez saisir un premier nombre (A)."
     LIRE a
 
-    ECRIRE "Veuillez saisir un second nombre (B)."
+    AFFICHER "Veuillez saisir un second nombre (B)."
     LIRE b
 
-TRAITMENT 2
-    c = a
-    a = b
-    b = c
+RESULTANT 1
 
+    AFFICHER "La originale valeur de A est",a, "et de B est",b, "."
 
+TRAITMENT 2 
 
-RESULTANT
-    ECRIRE "La originale valeur de A est",a, "et de B est",b, "."
+    c est un NOMBRE ENTIER.
 
-    ECRIRE " La valeur inversée de A est",b , "et de B est", c, "." 
+    La valeur de 'a' est stockée dans 'c'
+    La valeur de 'b' est stockée dans 'a'
+    La valeur de 'c' est stockée dans 'b'  // c contenait la valeur de 'a' avant l'inversion 
+
+ RESULTANT 2
+
+ AFFICHER " L'inverse valeur de A est",b, "et de B est",c, "."    
+
 
 ```
