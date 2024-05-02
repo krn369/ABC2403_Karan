@@ -23,7 +23,24 @@ public class App {
 		
 		if ( nombreDeCopies <= 10) {
 			
+			montantDeLaFacture = nombreDeCopies * App.P1;
 		}
+		
+		else if (nombreDeCopies <=  30 ) {
+			
+			montantDeLaFacture = 10 * App.P1 + (nombreDeCopies - 10) * App.P2 ;
+			
+		}
+		
+		else {
+			
+			montantDeLaFacture = 10 * App.P1 + 20 * App.P2 + (nombreDeCopies - 30) * App.P3 ;
+			
+		}
+		
+		System.out.println(" A payer: "+ montantDeLaFacture + "€");
+		
+		sc.close();
        
 	}
 
