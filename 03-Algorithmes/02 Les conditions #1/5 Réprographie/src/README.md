@@ -4,52 +4,39 @@ Un magasin proposant un service de Réprographie facture 0.10€ les 10 premièr
 Écrire l’algorithme qui demande à l’utilisateur de saisir le nombre de photocopies effectuées et affiche le montant de la facture correspondante.
 
 ```
+
+CONSTANTES
+
+	P1 est un Reel <-- 0.10
+	P2 est un Reel <-- 0.09
+	P3 est un Reel <-- 0.08
+	
+	
 VARIABLES
-    nbPhotocopies: NOMBRE ENTIER
-    prixTranche1: NOMBRE REEL
-    prixTranche2: NOMBRE REEL
-    prixTranche3: NOMBRE REEL
-    montantTranche1: NOMBRE REEL
-    montantTranche2: NOMBRE REEL
-    montantTranche3: NOMBRE REEL
-    montantTotal: NOMBRE REEL
-
-TRAITMENT 
-
-    // Demander à l'utilisateur le nombre de photocopies
-    ÉCRIRE "Saisissez le nombre de photocopies : "
-    LIRE nbPhotocopies
-
-    // Déterminer les prix et les montants par tranche
-    prixTranche1 = 0.10
-    prixTranche2 = 0.09
-    prixTranche3 = 0.08
-
-    // Calculer le nombre de photocopies dans chaque tranche
-    SI nbPhotocopies <= 10
-        ALORS
-            montantTranche1 = nbPhotocopies * prixTranche1
-            montantTranche2 = 0
-            montantTranche3 = 0
-        FINSI
-    SINON SI nbPhotocopies <= 30
-        ALORS
-            montantTranche1 = 10 * prixTranche1
-            montantTranche2 = (nbPhotocopies - 10) * prixTranche2
-            montantTranche3 = 0
-        FINSI
-    SINON
-        ALORS
-            montantTranche1 = 10 * prixTranche1
-            montantTranche2 = 20 * prixTranche2
-            montantTranche3 = (nbPhotocopies - 30) * prixTranche3
-        FINSI
-
-    // Calculer le montant total
-    montantTotal = montantTranche1 + montantTranche2 + montantTranche3
-
-    // Afficher le montant total
-    ÉCRIRE "Le montant total de la facture est de : ", montantTotal, "€."
-FIN
-
-```
+ 	
+	 	nombreDeCopies est un ENTIER
+	 	montantDeLaFacture est un NOMBRE REEL
+	 	
+TRAITMENT
+		 
+		 ECRIRE "Saisissez le nombre de photocopies : "
+		 LIRE nombreDeCopies
+		 
+	 	SI nombreDeCopies <= 10
+	 	ALORS
+	 		 montantDeLaFacture <-- nombreDeCopies * P1
+	 		 
+	 	SINON SI nombreDeCopies <= 30
+	 	ALORS
+	 		montantDeLaFacture <-- 10* P1 + ( nombreDeCopies-10 ) * P2
+	 	
+	 	SINON
+	 		montantDeLaFacture <-- 10 * P1 + 20 * P2 + (nombreDeCopies - 30) * P3
+	 	
+	 	FIN SI
+	 	
+RESULTANT
+	
+		ECRIRE "A payer: ", montantDeLaFacture, "€"
+	 	
+	```
