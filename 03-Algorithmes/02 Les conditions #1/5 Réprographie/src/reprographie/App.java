@@ -1,6 +1,6 @@
 package reprographie;
 
-import java.util.Scanner; // Importer la classe Scanner pour lire les entrées utilisateur
+import java.util.Scanner; 
 
 public class App {
 	
