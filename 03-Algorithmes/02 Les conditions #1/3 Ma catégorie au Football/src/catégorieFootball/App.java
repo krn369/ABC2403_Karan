@@ -20,28 +20,37 @@ public class App {
         // Déterminer la catégorie d'âge
         if (age < 5) {
             categorie = "Trop jeune";
-        } else if (age >= 5 && age <= 6) {
+            
+        } else if (age < 7) {
             categorie = "Débutant";
-        } else if (age >= 7 && age <= 8) {
+            
+        } else if (age < 9) {
             categorie = "Poussin";
-        } else if (age >= 9 && age <= 10) {
+            
+        } else if (age < 11) {
             categorie = "Benjamin";
-        } else if (age >= 11 && age <= 12) {
+            
+        } else if (age < 13) {
             categorie = "Pupille";
-        } else if (age >= 13 && age <= 14) {
+            
+        } else if (age < 15) {
             categorie = "Minime";
-        } else if (age >= 15 && age <= 16) {
+            
+        } else if (age < 17) {
             categorie = "Cadet";
-        } else if (age >= 17 && age <= 18) {
+            
+        } else if (age < 19) {
             categorie = "Junior";
-        } else if (age >= 19 && age <= 34) {
+            
+        } else if (age < 35) {
             categorie = "Sénior";
+            
         } else {
             categorie = "Vétéran";
         }
 
         // Afficher la catégorie d'âge
-        System.out.printf("Le joueur est dans la catégorie %s.\n", categorie);	
+        System.out.println("Le joueur est dans la catégorie " + categorie + ".");	
         
         sc.close();
 

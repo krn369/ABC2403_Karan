@@ -30,35 +30,35 @@ DEBUT
         ALORS
             categorie = "Trop jeune"
         FINSI
-    SINON SI age >= 5 ET age <= 6
+    SINON SI age < 7
         ALORS
             categorie = "Débutant"
         FINSI
-    SINON SI age >= 7 ET age <= 8
+    SINON SI age < 9
         ALORS
             categorie = "Poussin"
         FINSI
-    SINON SI age >= 9 ET age <= 10
+    SINON SI age < 11
         ALORS
             categorie = "Benjamin"
         FINSI
-    SINON SI age >= 11 ET age <= 12
+    SINON SI age < 13
         ALORS
             categorie = "Pupille"
         FINSI
-    SINON SI age >= 13 ET age <= 14
+    SINON SI age < 15
         ALORS
             categorie = "Minime"
         FINSI
-    SINON SI age >= 15 ET age <= 16
+    SINON SI age < 17
         ALORS
             categorie = "Cadet"
         FINSI
-    SINON SI age >= 17 ET age <= 18
+    SINON SI age < 19
         ALORS
             categorie = "Junior"
         FINSI
-    SINON SI age >= 19 ET age <= 34
+    SINON SI age < 35
         ALORS
             categorie = "Sénior"
         FINSI
