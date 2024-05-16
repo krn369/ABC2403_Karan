@@ -134,6 +134,6 @@ livreDispoBibliotheque est un BOOLEEN
 	FIN SI
 
 
-//RESULTAT 
+//RESULTAT ECRIRE "je vais lire un livre"
 
 ````
