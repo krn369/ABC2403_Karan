@@ -8,27 +8,29 @@ Lorsque la réponse convient, afficher le nombre saisi suivi de “Yes, you did 
 ````
 VARIABLES
 
-	nombreSaisi est un ENTIER
-	estDansPlage est un BOOLEEN
+	nombreSaisi est un nombre ENTIER
+	estValid est un BOOLEEN
 
 TRAITEMENT
 
-	// Boucle qui se répète tant que la réponse n'est pas dans la plage souhaitée
-	REPETER
+
+	REPETER //Do
 		ECRIRE "Saisissez un nombre entre 10 et 20 : "
 		LIRE nombreSaisi
 
 		// Vérifier si le nombre saisi est dans la plage souhaitée
-		SI nombreSaisi >= 10 ET nombreSaisi <= 20 ALORS
-			estDansPlage <-- VRAI
-		SINON
+		estValid =  nombreSaisi >= 10 ET nombreSaisi <= 20 ALORS
+			estValid <-- VRAI
+			
+		SI estValid <-- FAUX
 			// Afficher un message d'erreur en fonction du nombre saisi
+			ECRIRE ""Erreur !!! "
 			SI nombreSaisi > 20 ALORS
-				ECRIRE "Plus petit !"
+				ECRIRE " Essayez Plus petit !"
 			SINON
-				ECRIRE "Plus grand !"
+				ECRIRE "Essayez Plus grand !"
 			FINSI
-			estDansPlage <-- FAUX
+		
 		FINSI
 	JUSQU'A estDansPlage
 
