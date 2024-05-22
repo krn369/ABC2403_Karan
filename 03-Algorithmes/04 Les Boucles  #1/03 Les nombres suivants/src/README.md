@@ -24,7 +24,7 @@ TRAITEMENT
 	compteur <-- 0
 
 	// Boucle TANT QUE pour afficher les 10 nombres suivants
-	TANT QUE compteur < 10 FAIRE
+	TANT QUE compteur =< 10 FAIRE
 		// Afficher le nombre actuel (nombreDepart + compteur)
 		ECRIRE nombreDepart + compteur, ", "
 
