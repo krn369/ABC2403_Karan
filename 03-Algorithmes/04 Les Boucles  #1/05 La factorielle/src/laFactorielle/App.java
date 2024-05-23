@@ -10,7 +10,7 @@ public class App {
 
         // Déclaration des variables
         int nombre;
-        int fact = 1;
+        int factorielle = 1;
         int i;
 
         // Demander à l'utilisateur de saisir un nombre
@@ -23,11 +23,11 @@ public class App {
         } else {
             // Calculer la factorielle
             for (i = 1; i <= nombre; i++) {
-                fact *= i;
+                factorielle *= i;
             }
 
             // Afficher la factorielle calculée
-            System.out.println("La factorielle de " + nombre + " est : " + fact);
+            System.out.println("La factorielle de " + nombre + " est : " + factorielle);
         }
 	}
 
