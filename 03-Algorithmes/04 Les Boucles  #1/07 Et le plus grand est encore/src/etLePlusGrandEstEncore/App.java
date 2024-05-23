@@ -15,15 +15,18 @@ public class App {
         int compteurNombres = 0;
 
         // Boucle pour lire les nombres jusqu'à l'entrée d'un 0
-        while (nombreCourant != 0) { 
+        while (true) {
             compteurNombres++;
             System.out.print("Entrez le nombre numéro " + compteurNombres + " (0 pour quitter) : ");
             nombreCourant = scanner.nextInt();
 
-        
-            if (nombreCourant > plusGrandNombre) {
-                plusGrandNombre = nombreCourant;
-                numeroDuPlusGrandNombre = compteurNombres;
+            if (nombreCourant != 0) { // Check if current number is not 0
+                if (nombreCourant > plusGrandNombre) {
+                    plusGrandNombre = nombreCourant;
+                    numeroDuPlusGrandNombre = compteurNombres;
+                }
+            } else {
+                break; // Exit the loop if current number is 0
             }
         }
 
@@ -35,8 +38,8 @@ public class App {
             System.out.println("Le plus grand des nombres saisis est : " + plusGrandNombre);
             System.out.println("Il s'agit du nombre numéro " + numeroDuPlusGrandNombre);
         }
-	        
-	        scanner.close();
+
+        scanner.close();
 	}
 
 }
