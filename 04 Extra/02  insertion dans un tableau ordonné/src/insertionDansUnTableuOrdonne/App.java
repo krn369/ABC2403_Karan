@@ -15,7 +15,7 @@ public class App {
     	
     	tableau = newTableau(tableau);
     	
-    	System.out.print("Original version : ");
+    	System.out.print("New version : ");
     	
     	printTableau(tableau);
     	    	
@@ -38,8 +38,7 @@ public class App {
     		newTableau[i] = tableau[i]; }
     	
     	Scanner sc = new Scanner(System.in);
-    	System.out.println(" ");
-    	System.out.println("Entrez un nombre à ajouter au tableau : ");
+        	System.out.println("\nEntrez un nombre à ajouter au tableau : ");
     	newTableau[newTableau.length-1] = sc.nextInt();
     	
     	sc.close();
@@ -54,42 +53,4 @@ public class App {
     
     }
 
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-		/*
-		 * int[] newTableau = new int[tableau.length+1];
-		 * 
-		 * for(int i = 0; i<tableau.length; i++) {
-		 * 
-		 * newTableau[i] = tableau[i]; }
-		 * 
-		 * System.out.println("Entrez un nombre à ajouter au tableau : ");
-		 * 
-		 * newTableau[newTableau.length-1] = sc.nextInt();
-		 * 
-		 * for(int i = 0; i<tableau.length; i++) {
-		 * 
-		 * System.out.println(newTableau[i]); }
-		 */
-    	
-    	
-		/*
-		 * int position = 0; while (position < newTableau.length && newTableau[position]
-		 * < nombre) { position++; }
-		 * 
-		 * newTableau[position] = nombre;
-		 * 
-		 * for(int i = newTableau.length -1; i > position; i-- ) {
-		 * 
-		 * newTableau[i] = newTableau[i-1]; }
-		 * 
-		 * System.out.print("Tableau après insertion : "); for(int element : newTableau)
-		 * { System.out.print(element + " "); }
-		 */
-    	
     
