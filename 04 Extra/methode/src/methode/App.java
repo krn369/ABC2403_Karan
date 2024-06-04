@@ -1,19 +1,28 @@
 package methode;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class App {
 
 	public static void main(String[] args) {
 
-		LocalDateTime maintenant = LocalDateTime.now();
+		System.out.print("La Date et L'heure du moment est : " );
+		App.afficherJourHeureDuMoment();
 
-		DateTimeFormatter formateur = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-		String formateDateHeure = maintenant.format(formateur);
+		
 
-		System.out.println("La Date et L'heure du moment est : " + formateDateHeure);
-
+	}
+	
+	public static void afficherJourHeureDuMoment() {
+		
+		SimpleDateFormat s= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date date = new Date();
+		
+		System.out.println(s.format(date));
+		
+		
 	}
 
 }
