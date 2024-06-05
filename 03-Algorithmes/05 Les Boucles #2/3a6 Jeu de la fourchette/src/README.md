@@ -48,6 +48,4 @@ TRAITEMENT
 	ECRIRE "Bravo, vous avez trouvé le nombre mystère en ", nombreEssais, " essais !"
 
 RESULTAT
-FIN
-
 ````

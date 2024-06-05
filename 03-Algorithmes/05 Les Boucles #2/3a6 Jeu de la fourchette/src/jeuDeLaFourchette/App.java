@@ -1,6 +1,7 @@
 package jeuDeLaFourchette;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class App {
@@ -8,7 +9,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		 Random random = new Random();
-	        Scanner scanner = new Scanner(System.in);
+	        Scanner sc = new Scanner(System.in);
 
 	        // Generate the mystery number
 	        int nombreMystere = random.nextInt(101); // Range: 0 to 100 (inclusive)
@@ -20,7 +21,7 @@ public class App {
 	            nombreEssais++;
 
 	            System.out.print("Saisissez un nombre entre 0 et 100 : ");
-	            int nombreChoisi = scanner.nextInt();
+	            int nombreChoisi = sc.nextInt();
 
 	            if (nombreChoisi == nombreMystere) {
 	                trouve = true;
@@ -36,7 +37,7 @@ public class App {
 	        // Display the final result
 	        System.out.println("\nBravo, vous avez trouvé le nombre mystère en " + nombreEssais + " essais !");
 	        
-	        scanner.close();
+	        sc.close();
 	}
 
 }
