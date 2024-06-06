@@ -6,11 +6,11 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		  Scanner scanner = new Scanner(System.in);
+		  Scanner sc = new Scanner(System.in);
 
 	        // Get the number of values to input from the user
 	        System.out.print("Combien de valeurs voulez-vous saisir ? ");
-	        int nbValeurs = scanner.nextInt();
+	        int nbValeurs = sc.nextInt();
 
 	        // Create a dynamic array based on the user's input
 	        int[] valeurs = new int[nbValeurs];
@@ -18,7 +18,7 @@ public class App {
 	        // Get values from the user and store them in the array
 	        for (int i = 0; i < nbValeurs; i++) {
 	            System.out.print("Saisissez la valeur " + (i + 1) + " : ");
-	            valeurs[i] = scanner.nextInt();
+	            valeurs[i] = sc.nextInt();
 	        }
 
 	        // Initialize counters for positive and negative values
