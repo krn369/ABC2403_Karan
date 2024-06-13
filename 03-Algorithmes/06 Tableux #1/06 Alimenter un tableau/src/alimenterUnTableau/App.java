@@ -24,6 +24,7 @@ public class App {
 	        // Initialize counters for positive and negative values
 	        int nbPositifs = 0;
 	        int nbNegatifs = 0;
+	        int nbNeutre = 0;
 
 	        // Count positive and negative values
 	        for (int valeur : valeurs) {
@@ -32,13 +33,16 @@ public class App {
 	            } else if (valeur < 0) {
 	                nbNegatifs++;
 	            }
+	            else {
+					nbNeutre++;
+				}
 	        }
 
 	        // Display the results
 	        System.out.println("\nNombre de valeurs saisies : " + nbValeurs);
 	        System.out.println("Nombre de valeurs positives : " + nbPositifs);
 	        System.out.println("Nombre de valeurs négatives : " + nbNegatifs);
-
+	        System.out.println("Nombre de valeurs neutre : " + nbNeutre);
 	}
 
 }
