@@ -37,4 +37,14 @@ public class Bureau {
     public BigDecimal getHauteurEnCM() {
         return hauteurEnCM;
     }
+
+    // Getter for largeurEnCM
+    public BigDecimal getLargeurEnCM() {
+        return largeurEnCM;
+    }
+
+    // Getter for longueurEnCM
+    public BigDecimal getLongueurEnCM() {
+        return longueurEnCM;
+    }
 }
