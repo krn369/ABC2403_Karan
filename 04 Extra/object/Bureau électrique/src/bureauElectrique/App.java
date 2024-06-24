@@ -10,15 +10,26 @@
 // Encapsulation and Data Validation: How the program ensures valid height adjustments within specified limits.
 
 
+// Appropriate Questions for This Program.....
+// How does inheritance work in Java?
+// What are the differences between regular and electric desks in this program?
+// How can we manipulate the properties of an object in Java?
+// How do constructors and copy constructors work in Java?
+// How can encapsulation be used to protect data in Java objects?
+
 package bureauElectrique;
 
 import java.math.BigDecimal;
+
+// This class contains the main method where instances of Bureau and BureauElectrique are created and used.
 
 public class App {
 
 	public static void main(String[] args) {
 		
-  // Create an instance of Bureau
+ 	// Create an instance of Bureau
+	// Creates an instance of a regular desk (Bureau), sets its height, and prints its dimensions.
+		
         Bureau bureauSimple = new Bureau(new BigDecimal("150"), new BigDecimal("75"), new BigDecimal("80"));
 
         // Print initial dimensions of bureauSimple
@@ -33,6 +44,8 @@ public class App {
         System.out.println("Nouvelle hauteur du bureau simple : " + bureauSimple.getHauteurEnCM() + " cm");
 
         // Create an instance of BureauElectrique
+	// Creates instances of electric desks (BureauElectrique), manipulates their height, and prints their dimensions.
+		
         BureauElectrique bureau = new BureauElectrique(new BigDecimal("64"), new BigDecimal("120"),
                 new BigDecimal("80"), new BigDecimal("100"), new BigDecimal("75"), new BigDecimal("75"), true);
 
