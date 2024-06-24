@@ -2,17 +2,19 @@ package bureauElectrique;
 
 import java.math.BigDecimal;
 
+// This class extends the Bureau class to represent an electric desk with additional properties and methods.
+
 public class BureauElectrique extends Bureau{
 
 
-    private boolean branche;
+    private boolean branche;   // whether the desk is plugged in
     private final BigDecimal hauteur1EnCM;
     private final BigDecimal hauteur2EnCM;
     private final BigDecimal hauteur3EnCM;
     private final BigDecimal hauteurMaxEnCM;
     private final BigDecimal hauteurMinEnCM;
 
-    // Constructor with parameters
+    // Constructor with parameters :  Initializes the electric desk with all necessary properties.
     public BureauElectrique(BigDecimal hauteurMinEnCM, BigDecimal hauteurMaxEnCM, BigDecimal hauteurEnCM, BigDecimal hauteur3EnCM,
                             BigDecimal hauteur2EnCM, BigDecimal hauteur1EnCM, boolean branche) {
         super(null, null, hauteurEnCM);  // Passing null for largeurEnCM and longueurEnCM as they are not used in this context
@@ -24,7 +26,7 @@ public class BureauElectrique extends Bureau{
         this.hauteurMaxEnCM = hauteurMaxEnCM;
     }
 
-    // Copy constructor
+    // Copy constructor : Creates a new electric desk based on another electric desk's properties.
     public BureauElectrique(BureauElectrique bureauElectriqueACopier) {
         super(bureauElectriqueACopier);  // Call the superclass copy constructor
         this.branche = bureauElectriqueACopier.branche;
@@ -36,6 +38,13 @@ public class BureauElectrique extends Bureau{
     }
 
     // Methods
+    
+    // Brancher and DeBrancher: Plug in or unplug the desk.
+    // Descendre and Monter: Move the desk down or up by a specified height difference.
+    // PositionnerALaHauteur: Sets the height of the desk within allowable limits.
+    // MettreALaHauteur1, MettreALaHauteur2, MettreALaHauteur3: Set the desk to one of the predefined heights.
+
+    
     public boolean Brancher() {
         this.branche = true;
         return this.branche;
