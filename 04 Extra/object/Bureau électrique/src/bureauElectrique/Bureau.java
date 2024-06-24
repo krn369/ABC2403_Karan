@@ -2,6 +2,8 @@ package bureauElectrique;
 
 import java.math.BigDecimal;
 
+// This class represents a basic desk with properties for its dimensions and methods to manipulate these properties.
+
 public class Bureau {
     protected BigDecimal hauteurEnCM;
     protected BigDecimal largeurEnCM;
