@@ -1,3 +1,15 @@
+// How can you create and manipulate instances of a regular desk (Bureau) and an electric desk (BureauElectrique), ensuring that the electric desk can be adjusted to predefined heights within specified limits?
+// Comment pouvez-vous créer et manipuler des instances d'un bureau ordinaire (Bureau) et d'un bureau électrique (BureauElectrique), en garantissant que le bureau électrique peut être ajusté à des hauteurs prédéfinies dans des limites spécifiées ?
+
+// This question encourages understanding and application of the following concepts:
+
+// Class Inheritance: How BureauElectrique extends Bureau.
+// Object Creation: How to instantiate objects of Bureau and BureauElectrique.
+// Method Usage: How to use methods to manipulate object properties, such as setting heights and adjusting the desk position.
+// Constructor Overloading: Understanding different constructors in both classes, including the parameterized and copy constructors.
+// Encapsulation and Data Validation: How the program ensures valid height adjustments within specified limits.
+
+
 package bureauElectrique;
 
 import java.math.BigDecimal;
