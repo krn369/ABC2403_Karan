@@ -1,5 +1,13 @@
-// Create a class named Bouteille that represents a bottle. The class should have attributes for the bottle's capacity, current liquid amount, whether it is open or closed, and the type of liquid. Implement constructors for creating bottles with default properties, specific properties, and copying another bottle. Add methods to check if the bottle is full, open or close the bottle, fill or empty the bottle by specific amounts, and completely fill or empty the bottle.
-// Créez une classe nommée Bouteille qui représente une bouteille. La classe doit avoir des attributs concernant la capacité de la bouteille, la quantité actuelle de liquide, si elle est ouverte ou fermée et le type de liquide. Implémentez des constructeurs pour créer des bouteilles avec des propriétés par défaut, des propriétés spécifiques et copier une autre bouteille. Ajoutez des méthodes pour vérifier si la bouteille est pleine, ouvrir ou fermer la bouteille, remplir ou vider la bouteille selon des quantités spécifiques et remplir ou vider complètement la bouteille.
+// Create a class named Bouteille that represents a bottle. The class should have attributes for the bottle's capacity,
+// current liquid amount, whether it is open or closed, and the type of liquid. Implement constructors for creating bottles with 
+// default properties, specific properties, and copying another bottle. Add methods to check if the bottle is full, open or close the bottle,
+// fill or empty the bottle by specific amounts, and completely fill or empty the bottle.
+
+// Créez une classe nommée Bouteille qui représente une bouteille. La classe doit avoir des attributs concernant la capacité de la bouteille,
+// la quantité actuelle de liquide, si elle est ouverte ou fermée et le type de liquide. Implémentez des constructeurs pour créer des 
+// bouteilles avec des propriétés par défaut, des propriétés spécifiques et copier une autre bouteille. Ajoutez des méthodes pour 
+// vérifier si la bouteille est pleine, ouvrir ou fermer la bouteille, remplir ou vider la bouteille selon des quantités spécifiques et 
+// remplir ou vider complètement la bouteille.
 
 // This question tests understanding of:
 
