@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 // This class represents a basic desk with properties for its dimensions and methods to manipulate these properties.
 
 public class Bureau {
+	//  They are declared as protected, meaning they are accessible within the class and subclasses (like BureauElectrique).
+	
 	protected BigDecimal hauteurEnCM;
 	protected BigDecimal largeurEnCM;
 	protected BigDecimal longueurEnCM;
@@ -21,7 +23,7 @@ public class Bureau {
 		this.hauteurEnCM = hauteurEnCM;
 	}
 
-	// Copy constructor : Creates a new desk based on another desk's dimensions.
+	// Copy constructor : Creates a new Bureau object by copying the dimensions from another Bureau object (bureauACopier).
 	public Bureau(Bureau bureauACopier) {
 		this.largeurEnCM = bureauACopier.largeurEnCM;
 		this.longueurEnCM = bureauACopier.longueurEnCM;
@@ -38,8 +40,8 @@ public class Bureau {
 		return false;
 	}
 
-	// Getters (getHauteurEnCM, getLargeurEnCM, getLongueurEnCM): Retrieve the
-	// dimensions of the desk.
+	// Getter methods (getLargeurEnCM(), getLongueurEnCM(), getHauteurEnCM())
+	// These methods allow retrieving the desk's width, length, and height values, respectively.
 
 	// Getter for hauteurEnCM
 	public BigDecimal getHauteurEnCM() {
