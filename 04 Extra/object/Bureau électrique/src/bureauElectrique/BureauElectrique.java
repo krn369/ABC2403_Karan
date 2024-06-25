@@ -56,7 +56,19 @@ public class BureauElectrique extends Bureau {
 		return this.branche;
 	}
 
-	public boolean Descendre(BigDecimal differenceHauteur) {	 // Lowers the desk by a specified amount (within limits)
+
+	// Attempts to set the height, ensuring it's within limits and the desk is plugged in
+	@Override						// This annotation indicates overriding the inherited method
+	public boolean PositionnerALaHauteur(BigDecimal hauteur) {
+		if (hauteur.compareTo(hauteurMinEnCM) >= 0 && hauteur.compareTo(hauteurMaxEnCM) <= 0) {
+			super.positionnerALaHauteur(hauteur);   // This calls the positionnerALaHauteur(BigDecimal hauteur) method from the superclass (Bureau). 
+								// This method is likely responsible for actually adjusting the desk's height mechanism.
+			return true;
+		}
+		return false;
+	} 
+
+		public boolean Descendre(BigDecimal differenceHauteur) {	 // Lowers the desk by a specified amount (within limits)
 		    if (this.branche) {
 		      BigDecimal nouvelleHauteur = this.hauteurEnCM.subtract(difference);
 		      if (nouvelleHauteur.compareTo(hauteurMinEnCM) >= 0) {
@@ -74,17 +86,6 @@ public class BureauElectrique extends Bureau {
 		      }
 		    }
 		    return false;
-	}
-
-	// Attempts to set the height, ensuring it's within limits and the desk is plugged in
-	@Override						// This annotation indicates overriding the inherited method
-	public boolean PositionnerALaHauteur(BigDecimal hauteur) {
-		if (hauteur.compareTo(hauteurMinEnCM) >= 0 && hauteur.compareTo(hauteurMaxEnCM) <= 0) {
-			super.positionnerALaHauteur(hauteur);   // This calls the positionnerALaHauteur(BigDecimal hauteur) method from the superclass (Bureau). 
-								// This method is likely responsible for actually adjusting the desk's height mechanism.
-			return true;
-		}
-		return false;
 	}
 	
 	// Sets the height to one of the predefined heights (1, 2, or 3)
