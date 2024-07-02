@@ -5,9 +5,9 @@ public class Bouteille {
     // Attributes
     // Properties of the bottle
     private float contenanceEnL; // How much liquid it can hold (liters)
-    private float contenuEnL; // How much liquid is in it now (liters)
     private boolean ouvert; // Whether the lid is on or off (true for open, false for closed)
-    private String typeDeContenu; // What kind of drink is in it (water, juice, etc.)
+    float contenuEnL; // How much liquid is in it now (liters)
+    String typeDeContenu; // What kind of drink is in it (water, juice, etc.)
 
     // Constructor with no arguments: Makes a regular bottle
     // This constructor initializes a new bottle with a capacity of 1 liter, filled with 1 liter of water, and the bottle is closed.
