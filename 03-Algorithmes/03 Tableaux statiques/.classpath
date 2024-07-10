@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="01 Créer un tableau d’entiers/src"/>
+	<classpathentry kind="src" path="02 Créer un tableau de chaines de caractères/src"/>
+	<classpathentry kind="src" path="03 Alimenter un tableau/src"/>
+	<classpathentry kind="src" path="04 Somme des valeurs d&apos;un tableau/src"/>
+	<classpathentry kind="src" path="05 Somme des valeurs de 2 tableaux/src"/>
+	<classpathentry kind="src" path="06 Somme produits  des valeurs de 2 tableaux/src"/>
+	<classpathentry kind="src" path="07 Modifier un tableau/src"/>
+	<classpathentry kind="src" path="08 Recherche dans un tableau/src"/>
+	<classpathentry kind="src" path="09 Recherche spécifique dans un tableau/src"/>
+	<classpathentry kind="output" path="01 Créer un tableau d’entiers/bin"/>
+</classpath>
