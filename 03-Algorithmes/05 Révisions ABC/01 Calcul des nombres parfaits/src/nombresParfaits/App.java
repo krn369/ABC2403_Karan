@@ -2,49 +2,40 @@ package nombresParfaits;
 
 public class App {
 
-	public static void main(String[] args) {
-	    // Fonction pour trouver les premiers nombres parfaits (French)
-        // Function to find the first perfect numbers (English)
-        findFirstPerfectNumbers(4);
-    }
+	  public static void main(String[] args) {
+	    findFirstPerfectNumbers(4); // Change the argument to desired number of perfect numbers
+	  }
 
-    // Fonction pour vérifier si un nombre est parfait (French)
-    // Function to check if a number is perfect (English)
-    static boolean estParfait(int nombre) {
-        if (nombre <= 1) {
-            return false;
-        }
+	  static boolean estParfait(int nombre) {
+	    if (nombre <= 1) {  // If the number (nombre) is less than or equal to 1, it's not a perfect number. The method returns false in this case.
+	      return false;
+	    }
 
-        int somme = 1; // Inclure 1 comme diviseur (French)
-                        // Include 1 as a divisor (English)
-        for (int i = 2; i <= Math.sqrt(nombre); i++) {
-            if (nombre % i == 0) {
-                somme += i; // Ajouter le diviseur (French)
-                            // Add the divisor (English)
-                if (i == nombre / i) { // S'il s'agit d'un carré parfait, ajouter une seule fois (French)
-                                     // If it's a perfect square, add only once (English)
-                    somme -= i;
-                }
-            }
-        }
+	    int somme = 1; // Include 1 as a divisor
+	    for (int i = 2; i * i <= nombre; i++) {
+	      if (nombre % i == 0) {
+	        somme += i;
+	        if (i == nombre / i) {
+	          break; // Only add once for perfect squares
+	        } else {
+	          somme += nombre / i; // Add the other divisor for non-perfect squares
+	        }
+	      }
+	    }
 
-        return somme == nombre;
-    }
+	    return somme == nombre;
+	  }
 
-    // Fonction pour trouver et afficher les premiers nombres parfaits (French)
-    // Function to find and display the first perfect numbers (English)
-    static void findFirstPerfectNumbers(int nbNombres) {
-        int nombreParfaitCompte = 0;
-        int nombreCourant = 1;
+	  static void findFirstPerfectNumbers(int nbNombres) {
+	    int nombreParfaitCompte = 0;  // This variable is an integer that keeps track of how many perfect numbers have been found so far. It's initialized to 0.
+	    int nombreCourant = 2; // This variable is an integer that represents the current number being checked for perfection.  Start from 2 as 1 is not a perfect number
 
-        while (nombreParfaitCompte < nbNombres) {
-            if (estParfait(nombreCourant)) {
-                System.out.println(nombreCourant + " est un nombre parfait."); // French
-                System.out.println(nombreCourant + " is a perfect number."); // English
-                nombreParfaitCompte++;
-            }
-
-            nombreCourant++;
-        }
-    }
-}
+	    while (nombreParfaitCompte < nbNombres) {
+	      if (estParfait(nombreCourant)) {   // The code calls the estParfait method to check if the current number (nombreCourant) is a perfect number.
+	        System.out.println(nombreCourant + " est un nombre parfait.");  //Prints the number to the console along with a message indicating it's a perfect number.
+	        nombreParfaitCompte++; // Increments the nombreParfaitCompte to keep track of the found perfect numbers.
+	      }
+	      nombreCourant++; // The current number (nombreCourant) is incremented to move on to the next number for checking.
+	    }
+	  }
+	}
